@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class MenuItem extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'link',
+        'active',
+        'auth'
+    ];
 }
