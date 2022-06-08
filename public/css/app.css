@@ -1,0 +1,9 @@
+.color-white {
+    color: var(--bs-light);
+}
+.login-form {
+    max-width: 500px;
+}
+.login-form .form-group {
+    margin-bottom: 20px;
+}
