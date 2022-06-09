@@ -22,7 +22,7 @@
                 </div>
                 <div class="row">
                     <div class="col-auto">Token:</div>
-                    <div class="col-auto">{{Auth::user()->token}}</div>
+                    <div class="col-auto">{{Auth::user()->remember_token}}</div>
                 </div>
             </div>
         </div>
