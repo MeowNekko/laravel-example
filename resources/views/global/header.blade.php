@@ -2,13 +2,7 @@
     <nav class="row justify-content-between">
         <ul class="col-auto row list-unstyled mb-0">
             @foreach($menuItems as $menuItem)
-                @auth
-                    <li class="col-auto"><a href="{{ route($menuItem->link) }}">{{ $menuItem->name }}</a></li>
-                @else
-                    @if (!$menuItem->auth)
-                        <li class="col-auto"><a href="{{ route($menuItem->link) }}">{{ $menuItem->name }}</a></li>
-                    @endif
-                @endauth
+                <li class="col-auto"><a href="{{ url($menuItem->id) }}">{{ $menuItem->name }}</a></li>
             @endforeach
         </ul>
 

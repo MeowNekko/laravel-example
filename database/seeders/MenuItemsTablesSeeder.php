@@ -17,16 +17,18 @@ class MenuItemsTablesSeeder extends Seeder
         MenuItem::truncate();
 
         MenuItem::create([
-            'name' => 'Open',
-            'link' => 'open',
-            'active' => true,
-            'auth' => false,
+            'name'      => 'Open',
+            'link'      => 'open',
+            'template'  => 'pages/open',
+            'active'    => true,
+            'auth'      => false,
         ]);
         MenuItem::create([
-            'name' => 'Close',
-            'link' => 'close',
-            'active' => true,
-            'auth' => true,
+            'name'      => 'Close',
+            'link'      => 'close',
+            'template'  => 'pages/close',
+            'active'    => true,
+            'auth'      => true,
         ]);
     }
 }

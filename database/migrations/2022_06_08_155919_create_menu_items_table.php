@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('link');
+            $table->string('template');
             $table->boolean('active');
             $table->boolean('auth');
             $table->timestamps();
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menu_item');
+        Schema::dropIfExists('menu_items');
     }
 };
